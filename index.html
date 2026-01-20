@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cyberpunk | [Votre Nom]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Placeholder for icons -->
+</head>
+<body>
+
+    <div class="scanline"></div>
+    <div class="overlay"></div>
+
+    <header>
+        <nav class="cyber-nav">
+            <div class="logo" data-text="PORTFOLIO">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#home" data-text="Accueil">Accueil</a></li>
+                <li><a href="#about" data-text="À Propos">À Propos</a></li>
+                <li><a href="#projects" data-text="Projets">Projets</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ACCUEIL -->
+        <section id="home" class="cyber-section hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Moi, c'est Lucas">Moi, c'est Lucas</h1>
+                <p class="cyber-subtitle">DÉVELOPPEUR <span class="highlight">FULLSTACK</span> // PENTESTER <span class="highlight">WEB</span></p>
+                <a href="#projects" class="cyber-btn">
+                    <span class="btn-content">VOIR LES PROJETS</span>
+                    <span class="btn-glitch"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- À PROPOS -->
+        <section id="about" class="cyber-section">
+            <h2 class="section-title" data-text="01. À PROPOS">01. À PROPOS</h2>
+            <div class="container about-container">
+                <div class="about-text">
+                    <p>Étudiant en cybersécurité, orienté réseau et sécurité opérationnelle. J’aime comprendre les systèmes, les protocoles et les mécanismes d’attaque/défense. Je suis curieux sur tous les aspects Informatique, Robotique, Electrique, Mécanique. Je touche à tout hard comme soft. Mon objectif est de devenir un professionnel reconnu capable d’auditer, d’identifier les failles et de proposer des solutions efficaces.</p>                   
+
+                </div>
+                <div class="about-visual">
+                    <div class="cyber-frame">
+                        <img src="assets/avatar/images.jpg" alt="Avatar" class="avatar-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETS -->
+        <section id="projects" class="cyber-section">
+            <h2 class="section-title" data-text="02. PROJETS">02. PROJETS</h2>
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <div class="overlay-color"></div>
+                            <!-- Ajoutez votre image ici : bot-telegram.jpg -->
+                            <img src="bot-telegram.jpg" alt="Bot Telegram" class="project-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>BOT-TELEGRAM  LLM</h3>
+                            <p>Bot d'automatisation sur telegram. Language Python (projet informatique)</p>
+                            <div class="card-actions">
+                                <button class="small-cyber-btn open-modal-btn" data-target="modal-bot">Détails</button>
+                                <a href="#" class="small-cyber-btn">Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 2 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <div class="overlay-color"></div>
+                            <span>IMG_02</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>PROJET_BETA</h3>
+                            <p>Une application cybernétique pour la gestion des données.</p>
+                            <div class="card-actions">
+                                <a href="#" class="small-cyber-btn">Demo</a>
+                                <a href="#" class="small-cyber-btn">Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 3 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <div class="overlay-color"></div>
+                            <span>IMG_03</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>PROJET_GAMMA</h3>
+                            <p>Interface neuronale simulée en WebGL.</p>
+                            <div class="card-actions">
+                                <a href="#" class="small-cyber-btn">Demo</a>
+                                <a href="#" class="small-cyber-btn">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                     <!-- Projet 4 -->
+                     <article class="project-card">
+                        <div class="card-image">
+                            <div class="overlay-color"></div>
+                            <span>IMG_04</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>PROJET_DELTA</h3>
+                            <p>Système de sécurité biométrique fictif.</p>
+                            <div class="card-actions">
+                                <a href="#" class="small-cyber-btn">Demo</a>
+                                <a href="#" class="small-cyber-btn">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CONTACT -->
+        <section id="contact" class="cyber-section">
+            <h2 class="section-title" data-text="03. CONTACT">03. CONTACT</h2>
+            <div class="container contact-container">
+                <p>Initialiser la communication ?</p>
+                <a href="mailto:email@exemple.com" class="cyber-btn">
+                    <span class="btn-content">ENVOYER MESSAGE</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODAL BOT TELEGRAM -->
+    <div id="modal-bot" class="cyber-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">BOT TELEGRAM: GENERATEUR TIKTOK</h2>
+            
+            <!-- Onglets (Tabs) -->
+            <div class="modal-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'Details')">Détails Techniques</button>
+                <button class="tab-btn" onclick="openTab(event, 'Video')">Démonstration Vidéo</button>
+            </div>
+
+            <!-- Contenu Détails -->
+            <div id="Details" class="tab-content" style="display: block;">
+                <div class="modal-body">
+                    <p><strong>Objectif :</strong> Automatisation complète de création de contenu viral (Karaoké & Lyrics) depuis Telegram via IA.F</p>
+                    
+                    <h3>💡 Fonctionnalités Clés :</h3>
+                    <ul class="modal-list">
+                        <li><strong>Mode Lyrics :</strong> Scraping de paroles & pochettes, génération d'images stylisées (Glitch/Particules) via <code>Pillow</code>.</li>
+                        <li><strong>Mode Karaoké :</strong> Téléchargement YouTube, extraction audio, transcription IA via <strong>OpenAI Whisper</strong> pour le timestamping, rendu vidéo via <code>MoviePy</code>.</li>
+                        <li><strong>UX/UI :</strong> Interface Telegram interactive, personnalisation des polices et thèmes.</li>
+                    </ul>
+    
+                    <h3>🛠️ Défis Techniques & Compétences :</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h4>Intelligence Artificielle</h4>
+                            <p>Intégration de <code>faster_whisper</code> (ASR) pour une transcription audio ultra-précise et synchronisée.</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Traitement Média (Image/Vidéo)</h4>
+                            <p>Pipeline de rendu 100% Python. Calculs de coordonnées, filtres pixel par pixel et compositing sans logiciel externe (MoviePy, Pillow).</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Architecture & Async</h4>
+                            <p>Architecture modulaire et utilisation de <code>asyncio</code> pour gérer les tâches lourdes (rendu vidéo) sans bloquer le bot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenu Vidéo -->
+            <div id="Video" class="tab-content" style="display: none;">
+                <div class="video-container">
+                    <p class="cyber-subtitle" style="text-align: center; margin-bottom: 1rem;">DÉMONSTRATION DU FLUX UTILISATEUR</p>
+                    <!-- Remplacer src="" par le chemin de la vidéo ex: video/demo_bot.mp4 -->
+                    <video controls width="100%" class="cyber-video">
+                        <source src="demo_bot.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 LUCAS_PORTFOLIO // SYSTEM_ONLINE</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
