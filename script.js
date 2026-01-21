@@ -80,16 +80,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function openTab(evt, tabName) {
-    // Hide all tab content
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName('tab-content');
-    for (i = 0; i < tabcontent.length; i++) {
+    // Find the parent modal content to scope the query
+    var modalContent = evt.currentTarget.closest('.modal-content');
+    var context = modalContent || document;
+
+    // Hide all tab content within this modal
+    var tabcontent = context.getElementsByClassName('tab-content');
+    for (var i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = 'none';
     }
 
-    // Remove 'active' class from all buttons
-    tablinks = document.getElementsByClassName('tab-btn');
-    for (i = 0; i < tablinks.length; i++) {
+    // Remove 'active' class from all buttons within this modal
+    var tablinks = context.getElementsByClassName('tab-btn');
+    for (var i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(' active', '');
     }
 

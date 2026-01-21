@@ -226,6 +226,38 @@ main {
     color: var(--primary-color);
 }
 
+/* Hyperlinks */
+.cyber-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cyber-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 8px var(--secondary-color);
+}
+
+.cyber-link:hover {
+    color: var(--secondary-color);
+    text-shadow: 0 0 5px var(--secondary-color);
+    letter-spacing: 1px;
+}
+
+.cyber-link:hover::before {
+    width: 100%;
+}
+
 /* Buttons */
 .cyber-btn {
     position: relative;
