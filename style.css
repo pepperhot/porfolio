@@ -572,3 +572,100 @@ footer {
     margin-top: 1rem;
 }
 
+/* Tutorial Section */
+.tuto-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+.step-block {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(0, 243, 255, 0.1);
+    padding: 2rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.step-block:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+    .step-block {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .step-block.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.step-info {
+    flex: 1;
+}
+
+.step-visual {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tuto-img {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 5px 5px 0px rgba(255, 0, 255, 0.2);
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.step-number {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.step-info h3 {
+    font-family: var(--font-heading);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.step-desc p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #cbd5e1;
+}
+
+.step-desc strong {
+    color: var(--primary-color);
+}
+
+.step-desc em {
+    color: var(--secondary-color);
+    font-style: normal;
+    text-decoration: underline;
+}
+
+code {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+    color: var(--primary-color);
+}
+
+

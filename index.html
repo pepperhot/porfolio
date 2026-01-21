@@ -69,11 +69,10 @@
                             <img src="bot-telegram.jpg" alt="Bot Telegram" class="project-img">
                         </div>
                         <div class="card-content">
-                            <h3>BOT-TELEGRAM  LLM</h3>
+                            <h3>BOT-TELEGRAM</h3>
                             <p>Bot d'automatisation sur telegram. Language Python (projet informatique)</p>
                             <div class="card-actions">
                                 <button class="small-cyber-btn open-modal-btn" data-target="modal-bot">Détails</button>
-                                <a href="#" class="small-cyber-btn">Code</a>
                             </div>
                         </div>
                     </article>
@@ -82,14 +81,13 @@
                     <article class="project-card">
                         <div class="card-image">
                             <div class="overlay-color"></div>
-                            <span>IMG_02</span>
+                            <img src="assets/yhack_cover.jpg" alt="Interface Yhack" class="project-img">
                         </div>
                         <div class="card-content">
-                            <h3>PROJET_BETA</h3>
-                            <p>Une application cybernétique pour la gestion des données.</p>
+                            <h3>YHACK - AUDIT WEB</h3>
+                            <p>Scanner de vulnérabilités automatisé (DAST). Exploitation active de failles web.</p>
                             <div class="card-actions">
-                                <a href="#" class="small-cyber-btn">Demo</a>
-                                <a href="#" class="small-cyber-btn">Code</a>
+                                <button class="small-cyber-btn open-modal-btn" data-target="modal-yhack">Détails</button>
                             </div>
                         </div>
                     </article>
@@ -150,7 +148,7 @@
             <!-- Onglets (Tabs) -->
             <div class="modal-tabs">
                 <button class="tab-btn active" onclick="openTab(event, 'Details')">Détails Techniques</button>
-                <button class="tab-btn" onclick="openTab(event, 'Video')">Démonstration Vidéo</button>
+                <button class="tab-btn" onclick="openTab(event, 'Tuto')">Tutoriel</button>
             </div>
 
             <!-- Contenu Détails -->
@@ -183,15 +181,160 @@
                 </div>
             </div>
 
-            <!-- Contenu Vidéo -->
-            <div id="Video" class="tab-content" style="display: none;">
-                <div class="video-container">
-                    <p class="cyber-subtitle" style="text-align: center; margin-bottom: 1rem;">DÉMONSTRATION DU FLUX UTILISATEUR</p>
-                    <!-- Remplacer src="" par le chemin de la vidéo ex: video/demo_bot.mp4 -->
-                    <video controls width="100%" class="cyber-video">
-                        <source src="demo_bot.mp4" type="video/mp4">
-                        Votre navigateur ne supporte pas la lecture de vidéos.
-                    </video>
+            <!-- Contenu Tutoriel -->
+            <div id="Tuto" class="tab-content" style="display: none;">
+                <div class="tuto-container">
+                    <p class="cyber-subtitle" style="text-align: center; margin-bottom: 2rem;">GUIDE D'UTILISATION</p>
+                    
+                    <div class="tuto-steps">
+                        <!-- Etape 1 : Start -->
+                        <div class="step-block">
+                            <div class="step-info">
+                                <h3><span class="step-number">01.</span> DÉMARRAGE</h3>
+                                <div class="step-desc">
+                                    <p>Tout commence par la commande <code>/start</code>. Le bot s'initialise et vous présente le <strong>Menu Principal</strong>.</p>
+                                    <p>Depuis ce menu, vous pouvez :</p>
+                                    <ul class="modal-list">
+                                        <li>Choisir un parametrage couleur ou type de resultat</li>
+                                        <li>Sélectionner le mode de création (Lyrics ou Karaoké).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="step-visual">
+                                <img src="assets/tuto bot telegram/start.png" alt="Interface commande Start" class="tuto-img">
+                            </div>
+                        </div>
+
+                        <!-- Etape 2 : Lyrics -->
+                        <div class="step-block reverse">
+                            <div class="step-info">
+                                <h3><span class="step-number">02.</span> MODE LYRICS</h3>
+                                <div class="step-desc">
+                                    <p>Idéal pour obtenir rapidement les paroles d'une chanson avec un style visuel.</p>
+                                    <p><strong>Action :</strong> Cliquez sur le bouton "Lyrics" puis envoyez simplement le <em>Titre de la chanson</em> (ex: "Eminem:Godzilla").</p>
+                                    <p><strong>Résultat :</strong> Le bot renvoie les paroles complètes et génère deux image "Cover" unique et une description (près pour etre posté).</p>
+                                </div>
+                            </div>
+                            <div class="step-visual">
+                                <img src="assets/tuto bot telegram/lyrics.png" alt="Interface Mode Lyrics" class="tuto-img">
+                            </div>
+                        </div>
+
+                        <!-- Etape 3 : Karaoke -->
+                        <div class="step-block">
+                            <div class="step-info">
+                                <h3><span class="step-number">03.</span> MODE KARAOKÉ</h3>
+                                <div class="step-desc">
+                                    <p>Le mode le plus avancé. Il transforme une vidéo YouTube en clip vidéo avec paroles synchronisées.</p>
+                                    <p><strong>Action :</strong> Cliquez sur "Karaoké" puis envoyez un <em>Lien YouTube</em> ou le meme shema pour le lyrics Eminem:Godzilla.</p>
+                                    <p><strong>Résultat :</strong> Le bot télécharge, analyse l'audio, synchronise le texte et vous envoie le fichier vidéo final.</p>
+                                </div>
+                            </div>
+                            <div class="step-visual">
+                                <img src="assets/tuto bot telegram/karaoke.png" alt="Interface Mode Karaoké" class="tuto-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL YHACK -->
+    <div id="modal-yhack" class="cyber-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">YHACK: PLATEFORME D'AUDIT DE SÉCURITÉ</h2>
+            
+            <!-- Onglets (Tabs) -->
+            <div class="modal-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'YhackDetails')">Détails Techniques</button>
+                <button class="tab-btn" onclick="openTab(event, 'YhackTuto')">Tutoriel</button>
+            </div>
+
+            <!-- Contenu Détails -->
+            <div id="YhackDetails" class="tab-content" style="display: block;">
+                <div class="modal-body">
+                    <p><strong>Description :</strong> Yhack est un scanner de vulnérabilités web automatisé (DAST - Dynamic Application Security Testing) capable d'auditer la sécurité des sites en temps réel, de la reconnaissance passive à l'exploitation active.</p>
+                    
+                    <h3>🛡️ Modules d'Attaque Implémentés :</h3>
+                    <ul class="modal-list">
+                        <li><strong>Injection SQL (SQLi) :</strong> Fuzzing paramétrique et détection d'erreurs SGBD spécifiques.</li>
+                        <li><strong>XSS & RCE :</strong> Payloads polyglottes pour tester la réflexion et l'exécution de commandes système.</li>
+                        <li><strong>SSTI (Mako) :</strong> Injection de templates hybride via <code>Puppeteer</code> pour l'automatisation du navigateur.</li>
+                        <li><strong>Brute-Force :</strong> Attaque dictionnaire intelligente avec détection de Rate Limiting.</li>
+                        <li><strong>Reconnaissance :</strong> Scan de ports, énumération de sous-domaines (crt.sh) et détection de CMS.</li>
+                    </ul>
+    
+                    <h3>🛠️ Architecture Technique :</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h4>Moteur Backend (Node.js)</h4>
+                            <p>API REST asynchrone utilisant <code>node-fetch</code> pour les requêtes HTTP brutes et gestion modulaire des scans.</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Browser Automation</h4>
+                            <p>Utilisation de <strong>Puppeteer</strong> (Headless Chrome) pour les interactions complexes (remplissage formulaires, exécution JS).</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Interface & Rapport</h4>
+                            <p>Frontend "Dark Mode" avec feedback console en temps réel et génération de rapports de scan dynamiques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenu Tutoriel -->
+            <div id="YhackTuto" class="tab-content" style="display: none;">
+                <div class="tuto-container">
+                    <p class="cyber-subtitle" style="text-align: center; margin-bottom: 2rem;">WORKFLOW D'AUDIT</p>
+                    
+                    <div class="tuto-steps">
+                        <!-- Etape 1 : Configuration -->
+                        <div class="step-block">
+                            <div class="step-info">
+                                <h3><span class="step-number">01.</span> CIBLAGE</h3>
+                                <div class="step-desc">
+                                    <p>Configuration de l'audit via le tableau de bord.</p>
+                                    <p><strong>Action :</strong> Entrez l'URL cible (ex: <code>http://vulnerable-app.com</code>) et sélectionnez les modules d'attaque à activer (SQLi, XSS, Full Scan).</p>
+                                    <p>Le système vérifie la disponibilité de la cible avant de lancer le moteur.</p>
+                                </div>
+                            </div>
+                            <div class="step-visual">
+                                <img src="assets/tuto audit yhack/url.png" alt="Interface Yhack Configuration" class="tuto-img">
+                            </div>
+                        </div>
+
+                        <!-- Etape 2 : Scan -->
+                        <div class="step-block reverse">
+                            <div class="step-info">
+                                <h3><span class="step-number">02.</span> EXÉCUTION DU SCAN</h3>
+                                <div class="step-desc">
+                                    <p>Le moteur Yhack entre en action.</p>
+                                    <p><strong>Back-end :</strong> Le serveur lance les scripts <code>Puppeteer</code> pour simuler un utilisateur réel et injecte les payloads via l'API.</p>
+                                    <p><strong>Visuel :</strong> La console en temps réel affiche les tentatives d'intrusion et les réponses HTTP (200, 403, 500).</p>
+                                </div>
+                            </div>
+                            <div class="step-visual">
+                                <img src="assets/tuto audit yhack/puppetter.png" alt="Console temps réel Yhack" class="tuto-img">
+                            </div>
+                        </div>
+
+                        <!-- Etape 3 : Rapport -->
+                        <div class="step-block">
+                            <div class="step-info">
+                                <h3><span class="step-number">03.</span> RAPPORT & FLAGS</h3>
+                                <div class="step-desc">
+                                    <p>Analyse finale des résultats.</p>
+                                    <p>Une fois le scan terminé, Yhack génère un rapport classant les vulnérabilités par criticité (Low, Medium, Critical).</p>
+                                    <p>En mode CTF, le scanner extrait automatiquement les <strong>Flags</strong> trouvés dans la base de données ou les fichiers systèmes.</p>
+                                </div>
+                            </div>
+                            <div class="step-visual">
+                                <img src="assets/tuto_yhack_report.jpg" alt="Rapport de vulnérabilité Yhack" class="tuto-img">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
