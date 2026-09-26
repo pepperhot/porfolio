@@ -1,0 +1,121 @@
+{
+  "github": {
+    "user": "pepperhot",
+    "url": "https://github.com/pepperhot",
+    "public_repos": 11,
+    "followers": 3,
+    "following": 5,
+    "stars": 0,
+    "languages": [
+      {
+        "name": "JavaScript",
+        "count": 3
+      },
+      {
+        "name": "Python",
+        "count": 3
+      },
+      {
+        "name": "HTML",
+        "count": 2
+      },
+      {
+        "name": "TypeScript",
+        "count": 1
+      },
+      {
+        "name": "PHP",
+        "count": 1
+      }
+    ],
+    "latest": {
+      "name": "writeUp-HACK-THE-BOX",
+      "url": "https://github.com/pepperhot/writeUp-HACK-THE-BOX",
+      "description": "",
+      "updated": "2026-09-24T09:56:11Z"
+    }
+  },
+  "htb": {
+    "user": "pepperschool",
+    "url": "https://app.hackthebox.com/users/2773432",
+    "user_id": 2773432,
+    "rank": "Skilled",
+    "rank_text": "NOOB",
+    "level": 37,
+    "level_xp": "186/873",
+    "grade": "2/3",
+    "country": "France",
+    "points": 0,
+    "user_owns": 4,
+    "system_owns": 4,
+    "sherlocks": 3,
+    "challenges": 8,
+    "streak_weeks": 3,
+    "joined": "Oct 2025",
+    "recent": [
+      "Blue",
+      "Cap",
+      "Bashed"
+    ]
+  },
+  "rootme": {
+    "user": "pepperhot",
+    "url": "https://www.root-me.org/pepperhot",
+    "place": 52483,
+    "points": 330,
+    "challenges": 36,
+    "compromissions": 0,
+    "categories": [
+      {
+        "name": "Web - Serveur",
+        "points": 120,
+        "solved": 10,
+        "total": 97
+      },
+      {
+        "name": "Web - Client",
+        "points": 75,
+        "solved": 8,
+        "total": 42
+      },
+      {
+        "name": "Réseau",
+        "points": 35,
+        "solved": 4,
+        "total": 35
+      },
+      {
+        "name": "App - Script",
+        "points": 30,
+        "solved": 3,
+        "total": 33
+      },
+      {
+        "name": "Programmation",
+        "points": 25,
+        "solved": 3,
+        "total": 29
+      },
+      {
+        "name": "Stéganographie",
+        "points": 15,
+        "solved": 2,
+        "total": 24
+      },
+      {
+        "name": "Cracking",
+        "points": 15,
+        "solved": 3,
+        "total": 70
+      },
+      {
+        "name": "Cryptanalyse",
+        "points": 15,
+        "solved": 3,
+        "total": 75
+      }
+    ],
+    "note": "Mise à jour manuelle — pas d'API publique gratuite."
+  },
+  "updated_at": "2026-09-26T12:18:08+00:00"
+}

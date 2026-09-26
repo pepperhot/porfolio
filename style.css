@@ -915,4 +915,236 @@ code {
     color: var(--primary-color);
 }
 
+/* ============ STATS LIVE ============ */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
 
+.stat-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 243, 255, 0.25);
+    padding: 1.5rem;
+    position: relative;
+    transition: 0.3s;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+}
+
+.stat-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.25);
+    transform: translateY(-3px);
+}
+
+.stat-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0, 243, 255, 0.2);
+}
+
+.stat-card-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.stat-card-header .live-dot {
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #22c55e;
+    animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+}
+
+.stat-row .stat-label {
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+.stat-row .stat-value {
+    color: var(--text-color);
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
+.stat-row .stat-value.accent {
+    color: var(--secondary-color);
+}
+
+.stat-card-footer {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(0, 243, 255, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #64748b;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.stat-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    transition: 0.2s;
+}
+
+.stat-link:hover {
+    color: var(--secondary-color);
+    text-shadow: 0 0 8px currentColor;
+}
+
+.lang-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+
+.lang-chip {
+    background: rgba(0, 243, 255, 0.08);
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-family: var(--font-heading);
+}
+
+.updated-line {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    font-style: italic;
+}
+
+.stats-intro {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ============ FORMATION ============ */
+.formation-block {
+    background: var(--card-bg);
+    border-left: 3px solid var(--primary-color);
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.5rem;
+    max-width: 800px;
+}
+
+.formation-block h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.formation-block .school-meta {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 1px;
+}
+
+/* ============ COMPÉTENCES ============ */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.skill-block {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 0, 255, 0.15);
+    padding: 1rem 1.25rem;
+    transition: 0.3s;
+}
+
+.skill-block:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.15);
+}
+
+.skill-block h4 {
+    font-family: var(--font-heading);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.skill-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-block li {
+    padding: 3px 0;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+.skill-block li::before {
+    content: "▸ ";
+    color: var(--primary-color);
+}
+
+/* ============ GITHUB LINK / CODE LINK ============ */
+.card-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    transition: 0.2s;
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+}
+
+.icon-link:hover {
+    background: rgba(0, 243, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+.nav-links li a.github-icon {
+    color: var(--secondary-color);
+}

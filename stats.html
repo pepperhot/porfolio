@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats Live | Lucas Gemo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="scanline"></div>
+    <div class="overlay"></div>
+
+    <header>
+        <nav class="cyber-nav">
+            <div class="logo" data-text="PORTFOLIO"><a href="index.html" style="text-decoration: none; color: inherit;">PORTFOLIO</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-text="Accueil">Accueil</a></li>
+                <li><a href="about.html" data-text="À Propos">À Propos</a></li>
+                <li><a href="stats.html" data-text="Stats">Stats</a></li>
+                <li><a href="projects.html" data-text="Projets">Projets</a></li>
+                <li><a href="https://github.com/pepperhot" target="_blank" rel="noopener" class="github-icon" data-text="GitHub">GitHub ↗</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="stats" class="cyber-section">
+            <h2 class="section-title" data-text="STATS LIVE">STATS LIVE</h2>
+            <div class="container">
+                <p class="stats-intro">Données rafraîchies automatiquement toutes les 6&nbsp;h via GitHub Actions. GitHub est en direct via l'API publique&nbsp;; HTB et Root-Me sont mis à jour à la main.</p>
+
+                <div class="stats-grid">
+                    <!-- GITHUB -->
+                    <article class="stat-card" id="stat-github">
+                        <div class="stat-card-header">
+                            <h3>▲ GITHUB</h3>
+                            <span class="live-dot" title="Live"></span>
+                        </div>
+                        <div class="stat-row"><span class="stat-label">Repos publics</span><span class="stat-value" data-k="gh-repos">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Étoiles</span><span class="stat-value" data-k="gh-stars">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Abonnés</span><span class="stat-value" data-k="gh-followers">—</span></div>
+                        <div class="stat-row" style="align-items:flex-start;flex-direction:column;gap:0.3rem;">
+                            <span class="stat-label">Top langages</span>
+                            <div class="lang-chips" data-k="gh-langs"></div>
+                        </div>
+                        <div class="stat-card-footer">
+                            <span data-k="gh-latest">Dernier push : —</span>
+                            <a class="stat-link" href="https://github.com/pepperhot" target="_blank" rel="noopener">Profil ↗</a>
+                        </div>
+                    </article>
+
+                    <!-- HTB -->
+                    <article class="stat-card" id="stat-htb">
+                        <div class="stat-card-header">
+                            <h3>⬡ HACK THE BOX</h3>
+                            <span class="live-dot" title="Live"></span>
+                        </div>
+                        <div class="stat-row"><span class="stat-label">Pseudo</span><span class="stat-value accent" data-k="htb-user">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Rang</span><span class="stat-value" data-k="htb-rank">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Level</span><span class="stat-value" data-k="htb-level">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Machines User</span><span class="stat-value" data-k="htb-user-owns">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Machines System</span><span class="stat-value" data-k="htb-sys-owns">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Sherlocks</span><span class="stat-value" data-k="htb-sherlocks">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Challenges</span><span class="stat-value" data-k="htb-challenges">—</span></div>
+                        <div class="stat-card-footer">
+                            <span data-k="htb-recent">—</span>
+                            <a class="stat-link" href="https://app.hackthebox.com/users/2773432" target="_blank" rel="noopener">Profil ↗</a>
+                        </div>
+                    </article>
+
+                    <!-- ROOT-ME -->
+                    <article class="stat-card" id="stat-rootme">
+                        <div class="stat-card-header">
+                            <h3>◆ ROOT-ME</h3>
+                            <span class="live-dot" title="Mise à jour manuelle" style="background:#f59e0b;box-shadow:0 0 8px #f59e0b;"></span>
+                        </div>
+                        <div class="stat-row"><span class="stat-label">Pseudo</span><span class="stat-value accent" data-k="rm-user">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Points</span><span class="stat-value" data-k="rm-points">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Challenges</span><span class="stat-value" data-k="rm-challenges">—</span></div>
+                        <div class="stat-row"><span class="stat-label">Place mondiale</span><span class="stat-value" data-k="rm-place">—</span></div>
+                        <div class="stat-row" style="align-items:flex-start;flex-direction:column;gap:0.3rem;">
+                            <span class="stat-label">Top catégories</span>
+                            <div class="lang-chips" data-k="rm-categories"></div>
+                        </div>
+                        <div class="stat-card-footer">
+                            <span>Mise à jour manuelle</span>
+                            <a class="stat-link" href="https://www.root-me.org/pepperhot" target="_blank" rel="noopener">Profil ↗</a>
+                        </div>
+                    </article>
+                </div>
+                <p class="updated-line">Dernière synchro : <span id="updated-at">—</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>© 2026 LUCAS_PORTFOLIO // SYSTEM_ONLINE</p>
+            </div>
+            <div class="footer-right">
+                <a href="assets/CV.pdf" download class="cyber-btn footer-btn">
+                    <span class="btn-content">📥 TÉLÉCHARGER CV</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
