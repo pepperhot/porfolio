@@ -29,10 +29,10 @@
       }
     ],
     "latest": {
-      "name": "TP-REACT-API",
-      "url": "https://github.com/pepperhot/TP-REACT-API",
+      "name": "porfolio",
+      "url": "https://github.com/pepperhot/porfolio",
       "description": "",
-      "updated": "2026-09-27T20:51:19Z"
+      "updated": "2026-09-28T00:39:13Z"
     }
   },
   "htb": {
@@ -117,5 +117,5 @@
     ],
     "note": "Mise à jour manuelle — pas d'API publique gratuite."
   },
-  "updated_at": "2026-09-28T00:39:12+00:00"
+  "updated_at": "2026-09-28T06:30:51+00:00"
 }
