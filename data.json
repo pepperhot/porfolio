@@ -32,7 +32,7 @@
       "name": "writeUp-HACK-THE-BOX",
       "url": "https://github.com/pepperhot/writeUp-HACK-THE-BOX",
       "description": "",
-      "updated": "2026-10-02T10:59:01Z"
+      "updated": "2026-10-02T13:27:09Z"
     }
   },
   "htb": {
@@ -117,5 +117,5 @@
     ],
     "note": "Mise à jour manuelle — pas d'API publique gratuite."
   },
-  "updated_at": "2026-10-02T12:20:05+00:00"
+  "updated_at": "2026-10-02T18:17:46+00:00"
 }
