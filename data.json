@@ -29,10 +29,10 @@
       }
     ],
     "latest": {
-      "name": "porfolio",
-      "url": "https://github.com/pepperhot/porfolio",
+      "name": "writeUp-HACK-THE-BOX",
+      "url": "https://github.com/pepperhot/writeUp-HACK-THE-BOX",
       "description": "",
-      "updated": "2026-10-07T00:37:45Z"
+      "updated": "2026-10-07T10:59:53Z"
     }
   },
   "htb": {
@@ -117,5 +117,5 @@
     ],
     "note": "Mise à jour manuelle — pas d'API publique gratuite."
   },
-  "updated_at": "2026-10-07T06:22:07+00:00"
+  "updated_at": "2026-10-07T12:20:48+00:00"
 }
