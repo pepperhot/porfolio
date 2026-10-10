@@ -2,7 +2,7 @@
   "github": {
     "user": "pepperhot",
     "url": "https://github.com/pepperhot",
-    "public_repos": 12,
+    "public_repos": 13,
     "followers": 3,
     "following": 5,
     "stars": 0,
@@ -24,15 +24,19 @@
         "count": 2
       },
       {
+        "name": "C++",
+        "count": 1
+      },
+      {
         "name": "PHP",
         "count": 1
       }
     ],
     "latest": {
-      "name": "porfolio",
-      "url": "https://github.com/pepperhot/porfolio",
+      "name": "BrasRobot",
+      "url": "https://github.com/pepperhot/BrasRobot",
       "description": "",
-      "updated": "2026-10-10T00:37:33Z"
+      "updated": "2026-10-10T11:44:08Z"
     }
   },
   "htb": {
@@ -117,5 +121,5 @@
     ],
     "note": "Mise à jour manuelle — pas d'API publique gratuite."
   },
-  "updated_at": "2026-10-10T06:21:18+00:00"
+  "updated_at": "2026-10-10T12:18:19+00:00"
 }
