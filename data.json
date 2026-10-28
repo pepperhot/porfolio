@@ -36,7 +36,7 @@
       "name": "porfolio",
       "url": "https://github.com/pepperhot/porfolio",
       "description": "",
-      "updated": "2026-10-28T06:15:59Z"
+      "updated": "2026-10-28T12:14:31Z"
     }
   },
   "htb": {
@@ -121,5 +121,5 @@
     ],
     "note": "Mise à jour manuelle — pas d'API publique gratuite."
   },
-  "updated_at": "2026-10-28T12:14:30+00:00"
+  "updated_at": "2026-10-28T18:12:02+00:00"
 }
