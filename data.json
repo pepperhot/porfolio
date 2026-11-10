@@ -2,41 +2,33 @@
   "github": {
     "user": "pepperhot",
     "url": "https://github.com/pepperhot",
-    "public_repos": 14,
+    "public_repos": 7,
     "followers": 4,
     "following": 5,
     "stars": 0,
     "languages": [
       {
         "name": "Python",
-        "count": 4
-      },
-      {
-        "name": "JavaScript",
         "count": 3
-      },
-      {
-        "name": "HTML",
-        "count": 2
-      },
-      {
-        "name": "TypeScript",
-        "count": 2
       },
       {
         "name": "C++",
         "count": 1
       },
       {
-        "name": "PHP",
+        "name": "HTML",
+        "count": 1
+      },
+      {
+        "name": "JavaScript",
         "count": 1
       }
     ],
     "latest": {
-      "name": "porfolio",
-      "url": "https://github.com/pepperhot/porfolio",
+      "name": "pepperhot",
+      "url": "https://github.com/pepperhot/pepperhot",
       "description": "",
-      "updated": "2026-11-10T00:20:05Z"
+      "updated": "2026-11-10T11:58:07Z"
     }
   },
   "htb": {
@@ -121,5 +113,5 @@
     ],
     "note": "Mise à jour manuelle — pas d'API publique gratuite."
   },
-  "updated_at": "2026-11-10T06:13:52+00:00"
+  "updated_at": "2026-11-10T12:11:54+00:00"
 }
