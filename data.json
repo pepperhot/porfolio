@@ -25,10 +25,10 @@
       }
     ],
     "latest": {
-      "name": "porfolio",
-      "url": "https://github.com/pepperhot/porfolio",
-      "description": "",
-      "updated": "2026-11-13T18:09:19Z"
+      "name": "cyber-hunt-toolkit",
+      "url": "https://github.com/pepperhot/cyber-hunt-toolkit",
+      "description": "Flotte de subagents (Claude Code) pour la chasse de vulnerabilites sur programmes bug bounty autorises — scope-gated, preuve minimale non destructive. Agents + methodes, sans donnees de programmes.",
+      "updated": "2026-11-10T11:29:43Z"
     }
   },
   "htb": {
@@ -113,5 +113,5 @@
     ],
     "note": "Mise à jour manuelle — pas d'API publique gratuite."
   },
-  "updated_at": "2026-11-14T00:20:44+00:00"
+  "updated_at": "2026-11-14T06:12:15+00:00"
 }
